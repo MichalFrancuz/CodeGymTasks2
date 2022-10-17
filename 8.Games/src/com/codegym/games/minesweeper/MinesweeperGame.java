@@ -21,7 +21,7 @@ public class MinesweeperGame extends Game {
         openTile(x, y);
     }
 
-    private void openTile(int x, int y) {
+    private void openTile(int x, int y) { //
         if (gameField[y][x].isMine) {
             setCellValue(x, y, MINE);
         } else if (!gameField[y][x].isMine && gameField[y][x].countMineNeighbors == 0) { // to finish
